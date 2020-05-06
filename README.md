@@ -36,15 +36,13 @@ Modifica la gramática corrigiendo los errores que veas, de manera que genere fr
 
 <sum> ::= <fact> (('*', '/') <fact>)*
 
-<fact> ::= <value> | <word> <apply> | <parenthesis> | <array> // Added by: Casiano
+<fact> ::= (VALUE | WORD | <array> | <parenthesis> ) ('.' WORD | '[' <expr> ']' | <apply> )*
 
 <apply> ::= '(' <expr> (',' <expr>)* ')'<apply> | '.'<word><apply> | empty
 
 <array> ::= '[' ']' | '[' <expr> (',' <expr> )*] // Added by Casiano
 
 <parenthesis> ::= '(' <expr> ')'
- 
-
 
 
 ```
