@@ -6,8 +6,9 @@ Modifica la gramática corrigiendo los errores que veas, de manera que genere fr
 2. `a.b.c = a[x]`
 3. `a.b[x*y].d = c.d[3][1].e(temp)`
 
-Procura que exprese bien la precedencia de operadores (vigila la asignación)
+* Procura que exprese bien la precedencia de operadores (vigila la asignación)
 
+* La variable `<value>` no se describe (y debería describirse)
 
 ## Grammar
 
