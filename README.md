@@ -28,7 +28,7 @@ Modifica la gramática corrigiendo los errores que veas, de manera que genere fr
 
 <asig> ::= (<valor_izquierdo> '=' <expr>)*  // Arbol a derecha.
 
-<valor_izquierdo> ::= WORD ( '.'<word><apply> | '[' <expr> (',' <expr> )*']'  )
+<valor_izquierdo> ::= WORD ( '.'WORD | '[' <expr> ']' )*
 
 <expr> ::= <term> (('==', '!=', '>', '>=', '<', '<=') <term>)*
 
